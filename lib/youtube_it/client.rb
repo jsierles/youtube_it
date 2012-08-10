@@ -106,6 +106,10 @@ class YouTubeIt
       client.upload(data, opts)
     end
 
+    def video_captions_update(video_id, data, opts = {})
+      client.captions_update(video_id, data, opts)
+    end
+
     def video_update(video_id, opts = {})
       client.update(video_id, opts)
     end
